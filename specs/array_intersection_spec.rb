@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/reporters'
 require_relative '../lib/array_intersection'
+require 'pry'
 
 describe "array intersection" do
   describe "basic tests" do
@@ -8,7 +9,6 @@ describe "array intersection" do
       array1 = [70, 90, 34, 21, 78, 42]
       array2 = [21, 67, 54, 29, 42, 30]
       expected_intersection = [21, 42]
-
       intersection(array1, array2).sort!.must_equal expected_intersection
     end
 
